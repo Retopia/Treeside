@@ -1,0 +1,103 @@
+/* AboutUs.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.sectionTitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.textBlock {
+  margin-bottom: 2rem;
+}
+
+.line {
+  height: 1rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Founder styles */
+.founder {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.founderPhoto {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  flex-shrink: 0;
+}
+
+.founderInfo {
+  flex-grow: 1;
+}
+
+.founderLine {
+  height: 2rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+/* Regular team member styles */
+.teamMember {
+  margin-bottom: 2rem;
+}
+
+.memberPhoto {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.memberInfo {
+  max-width: 200px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .founder {
+    flex-direction: column;
+  }
+  
+  .founderPhoto {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
