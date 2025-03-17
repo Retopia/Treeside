@@ -1,7 +1,6 @@
 // App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
-import styles from './App.module.css';
 import Home from './Home';
 import Product from './Product';
 import AboutUs from './AboutUs';
@@ -12,17 +11,17 @@ export default function App() {
     <BrowserRouter>
       <div>
         {/* Navigation Menu */}
-        <nav className={styles.nav}>
-          <div className={styles.brand}>
-            <Link to="/" className={styles.brandLink}>
+        <nav className="p-4 flex justify-between items-center border-b border-gray-200">
+          <div className="font-bold text-xl">
+            <Link to="/" className="no-underline text-black">
               Treeside
             </Link>
           </div>
 
-          <ul className={styles.navList}>
-            <li><Link to="/product" className={styles.navLink}>Product</Link></li>
-            <li><Link to="/about" className={styles.navLink}>About Us</Link></li>
-            <li><Link to="/contact" className={styles.navLink}>Contact Us</Link></li>
+          <ul className="flex gap-6 list-none m-0 p-0">
+            <li><Link to="/product" className="no-underline text-black">Product</Link></li>
+            <li><Link to="/about" className="no-underline text-black">About Us</Link></li>
+            <li><Link to="/contact" className="no-underline text-black">Contact Us</Link></li>
           </ul>
         </nav>
 
